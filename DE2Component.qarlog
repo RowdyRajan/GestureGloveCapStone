@@ -1,0 +1,74 @@
+Quartus II Archive log --	/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/GestureGloveCapstone/DE2Component.qarlog
+
+Archive:	/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/GestureGloveCapstone/DE2Component.qar
+Date:		Thu Mar  3 21:03:08 2016
+Quartus II 32-bit		12.1 Build 243 01/31/2013 SP 1 SJ Full Version
+
+	=========== Files Selected: ===========
+/OPT/altera/12.1/tools/quartus/linux/assignment_defaults.qdf
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/DE2Component.qpf
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/DE2Component.qsf
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/DE2Component.vhd
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/USB_Component_hw.tcl
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/niosII_system.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/DE2_CONSTANTS.vhd
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/altera_avalon_sc_fifo.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/altera_avalon_st_clock_crosser.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/altera_avalon_st_handshake_clock_crosser.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/altera_avalon_st_pipeline_base.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/altera_merlin_address_alignment.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/altera_merlin_arbitrator.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/altera_merlin_burst_adapter.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/altera_merlin_burst_uncompressor.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/altera_merlin_master_agent.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/altera_merlin_master_translator.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/altera_merlin_slave_agent.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/altera_merlin_slave_translator.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/altera_merlin_width_adapter.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/altera_reset_controller.sdc
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/altera_reset_controller.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/altera_reset_synchronizer.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_addr_router.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_addr_router_001.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_altpll_0.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_cmd_xbar_demux.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_cmd_xbar_demux_001.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_cmd_xbar_mux.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_green_leds.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_id_router.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_id_router_001.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_id_router_004.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_id_router_010.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_irq_mapper.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_jtag_uart_0.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_jtag_uart_0_input_mutex.dat
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_jtag_uart_0_input_stream.dat
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_jtag_uart_0_output_stream.dat
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_nios2_qsys_0.sdc
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_nios2_qsys_0.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_nios2_qsys_0_jtag_debug_module_sysclk.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_nios2_qsys_0_jtag_debug_module_tck.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_nios2_qsys_0_jtag_debug_module_wrapper.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_nios2_qsys_0_oci_test_bench.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_nios2_qsys_0_ociram_default_contents.mif
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_nios2_qsys_0_rf_ram_a.mif
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_nios2_qsys_0_rf_ram_b.mif
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_nios2_qsys_0_test_bench.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_onchip_memory2_0.hex
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_onchip_memory2_0.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_rsp_xbar_demux.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_rsp_xbar_demux_004.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_rsp_xbar_mux.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_rsp_xbar_mux_001.sv
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_sdram_0.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_sram_0.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_switches.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_sysid_qsys_0.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/niosII_system_timer_0.v
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/db/ip/niosII_system/submodules/usb_component.vhd
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/incremental_db/compiled_partitions/DE2Component.db_info
+/afs/ualberta.ca/home/e/g/egsmith/Desktop/Capstone/DE2Component/niosII_system.qsys
+	======= Total: 63 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
