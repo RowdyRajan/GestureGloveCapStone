@@ -39,13 +39,13 @@
 // USB Module libraries
 #include "basictyp.h"
 #include "common.h"
-#include "ISR.h"
-#include "USB.h"
+#include "isr.h"
+#include "usb.h"
 #include "devicerequest.h"
 #include "ISP1362_HAL.h"
 
 
-// What are these for?
+// What are these for? Obviously one is for pio registers.. but what functions?
 #include "altera_avalon_pio_regs.h"
 #include "alt_types.h"
 
@@ -61,16 +61,78 @@ OS_STK    gesture_task_stk[TASK_STACKSIZE];
 /* Task for handling USB related tasks */
 void usb_device_task(void* pdata)
 {
-  while (1)
-  { 
-	Hal4D13_RegAccess();
-    printf("Hello from task1\n");
-	printf("This task is the USB device handler\n");
-    OSTimeDlyHMSM(0, 0, 3, 0);
+	/*** Start of code taken from LED example project. ***/
+	//Reset USB core and USB connections
+	disable();
+    disconnect_USB();
+    usleep(1000000);
+    Hal4D13_ResetDevice();
+    bUSBCheck_Device_State.State_bits.DEVICE_DEFAULT_STATE = 1;
+    bUSBCheck_Device_State.State_bits.DEVICE_ADDRESS_STATE = 0;
+    bUSBCheck_Device_State.State_bits.DEVICE_CONFIGURATION_STATE = 0;
+    bUSBCheck_Device_State.State_bits.RESET_BITS = 0;  
+    usleep(1000000);
+    reconnect_USB(); 
+    CHECK_CHIP_ID();
+    Hal4D13_AcquireD13(ISP1362_DC_IRQ,(void*)usb_isr);
+    enable();
+	
+    bD13flags.bits.verbose=1;	
+	/*** End of code taken from LED example project. ****/
+
+	Hal4D13_RegAccess(); // Tests connection.
+	
+	
+	// Each iteration checks
+	while (1)
+	{ 
+		/* Commented out to see if I can test connection without doing any ongoing communication. Don't know if it will work this way.
+		// Start of code taken from LED example project. 
+		// So far code is taken verbatim, but I am going through each item so it does what I want it to do.
+		if (bUSBCheck_Device_State.State_bits.RESET_BITS == 1)
+		{
+			disable();
+			break;  
+		}
+		if (bD13flags.bits.suspend)
+		{
+			disable();
+			bD13flags.bits.suspend= 0;
+			enable();
+			suspend_change();    
+		} // Suspend Change Handler
+		
+		if (bD13flags.bits.DCP_state == USBFSM4DCP_SETUPPROC)
+		{
+			disable();
+			SetupToken_Handler();
+			enable();
+		} // Setup Token Handler 
+		
+		if ((bD13flags.bits.DCP_state == USBFSM4DCP_REQUESTPROC) && !ControlData.Abort)
+		{
+			disable();
+			bD13flags.bits.DCP_state = 0x00;
+			DeviceRequest_Handler();
+			enable();
+		} // Device Request Handler
+		
+		usleep(1);
+		*/
+		/*** End of code taken from LED example project. ****/
+		
+		printf("Hello from task1\n");
+		printf("This task is the USB device handler\n");
+		OSTimeDlyHMSM(0, 0, 3, 0);
   }
 }
 
-/* Prints "Hello World" and sleeps for three seconds */
+/* Prints "Hello World" and sleeps for three seconds. 
+*  
+*  Will eventually analyze data gathered from glove to determine what gesture 
+*  signals to send across USB. Passes a message to USB process that data is ready
+*  to send.
+*/
 void gesture_task(void* pdata)
 {
   while (1)
