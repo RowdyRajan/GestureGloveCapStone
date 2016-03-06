@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include "system.h"
 #include "sys/alt_irq.h"
-#include "BasicTyp.h"
+#include "basictyp.h"
 #include "common.h"
 #include "HAL4D13.h"
 #include "usb_irq.h"

@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-#include "BasicTyp.h"
+#include "basictyp.h"
 #include "common.h"
 #include "usb.h"
-#include "Hal4D13.h"
+#include "HAL4D13.h"
 #include "chap_9.h"
 #include "D13BUS.h"
 #include "iso.h"
 #include "system.h"
 #include "usb_irq.h"
-#include "isp1362_includes.h"
+#include "ISP1362_includes.h"
 
 extern D13FLAGS bD13flags;
 extern CONTROL_XFER ControlData;

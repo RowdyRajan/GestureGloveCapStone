@@ -1,13 +1,13 @@
 
 #include <stdio.h>
 #include <string.h>
-#include "BasicTyp.h"
-#include "USB.h"
-#include "Hal4D13.h"
-#include "Chap_9.h"
-#include "D13bus.h"
+#include "basictyp.h"
+#include "usb.h"
+#include "HAL4D13.h"
+#include "chap_9.h"
+#include "D13BUS.h"
 #include "usb_irq.h"
-#include "mainloop.h"
+#include "devicerequest.h"
 
 
 // ***************************************************************************

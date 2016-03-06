@@ -2,12 +2,12 @@
 #include <stdio.h>
 #include "basictyp.h"
 #include "common.h"
-#include "device_request.h"
+#include "devicerequest.h"
 #include "usb.h"
 #include "HAL4D13.h"
 #include "chap_9.h"
 #include "D13BUS.h"
-#include "ISO.h"
+#include "iso.h"
 
 extern IO_REQUEST idata ioRequest;
 extern D13FLAGS bD13flags;

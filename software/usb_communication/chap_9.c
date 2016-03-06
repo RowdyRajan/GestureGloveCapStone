@@ -1,13 +1,13 @@
 
 #include <stdio.h>
 #include <string.h>
-#include "BasicTyp.h"
+#include "basictyp.h"
 #include "common.h"
 #include "usb.h"
 #include "chap_9.h"
-#include "Hal4D13.h"
-#include "ISO.H"
-#include "MAINLOOP.H"
+#include "HAL4D13.h"
+#include "iso.h"
+#include "devicerequest.h"
 // *************************************************************************
 // Public Data
 // *************************************************************************

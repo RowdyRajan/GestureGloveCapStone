@@ -2,16 +2,16 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-#include "BasicTyp.h"
+#include "basictyp.h"
 #include "common.h"
-#include "USB.h"
+#include "usb.h"
 #include "HAL4D13.h"
 #include "isr.h"
 #include "iso.h"
-#include "mainloop.h"
+#include "devicerequest.h"
 #include "usb_irq.h"
 #include "chap_9.h"
-#include "isp1362_includes.h"
+#include "ISP1362_includes.h"
 
 // ************************************************************************
 //  Public static data

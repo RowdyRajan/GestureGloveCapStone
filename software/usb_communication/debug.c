@@ -7,9 +7,9 @@
 #include <string.h>
 #include <stddef.h>
 #include <unistd.h>  // usleep (unix standard?)
+#include <io.h>
 #include "sys/alt_flash.h"
 #include "sys/alt_flash_types.h"
-#include "io.h"
 #include "alt_types.h"  // alt_u32
 #include "altera_avalon_pio_regs.h" //IOWR_ALTERA_AVALON_PIO_DATA
 #include "sys/alt_irq.h"  // interrupt

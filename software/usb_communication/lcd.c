@@ -2,7 +2,7 @@
 #include <string.h>
 #include <io.h>
 #include "system.h"
-#include "LCD.h"
+#include "lcd.h"
 //-------------------------------------------------------------------------
 void LCD_Init()
 {
